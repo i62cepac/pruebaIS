@@ -16,3 +16,10 @@ Hola, *cursiva*, **negrita**, __negrita__, _cursiva_
 > Esto es una cita.
 
 `git init`
+
+~~~
+dsfasgfasgsa
+asgasgasdgsa
+sagsagasg
+~~~
+
