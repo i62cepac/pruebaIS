@@ -107,6 +107,6 @@ asgasgasdgsa
 sagsagasg
 ~~~
 
-![Ramas](./Ramas.png)
+![Ramas](imagen/Ramas.png)
 
 ![Perrito](https://www.recreoviral.com/wp-content/uploads/2014/11/boo.jpg)
