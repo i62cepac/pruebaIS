@@ -1,79 +1,51 @@
 # pruebaIS
 
-Probando práctica
+# Dar seguimiento a *branches* remotos
 
-# Ramas o *Branches*
+**LOCAL → REMOTO**
 
-Es la forma para separar la línea actual de desarrollo con respecto
-a la principal. Normalmente representan versiones del software que
-posteriormente son integradas a la línea principal.
+ 1. Cambios en el repositorio local.
+ 2. Commit de los cambios.
+ 3. Añadir cambios a repositorio remoto:
 
-![Ramas](imagen/Ramas.png "rama")
+ `git  push`
 
-### Comandos Ramas I
+**REMOTO → LOCAL**
 
-* Ver listado de ramas:
+ * Sincronización y unión:
+ 
+  `git  fetch  origin`
 
-  `git branch`
+  `git  merge  origin/master`
 
-* Crear una rama:
+ * En un solo paso:
 
-  `git branch nombre_rama`
+  `git  pull`
+ 
+# Operaciones con *branches* remotos:
 
-* Cambiarnos a una rama:
+**Creación**
 
-  `git checkout nombre_rama`
+  1. Crear branch local.
+  2. Hacer cambios en dicho branch.
+  3. Hacer commit.
+  4. Copiar el branch al repositorio remoto:
 
-* Crear una rama y moverse en un paso:
+  `git push -u origin branch_remoto`
 
-  `git checkout -b nombre_rama`
+**Copia:**
 
-* Comparar ramas:
+  `git chekout -b local remoto`
 
-  `git diff nombre_rama..nombre_rama`
+**Eliminación:**
 
-### Comandos Ramas II
+  `git push origin --delete branch_remoto`
 
-* Ver ramas idénticas a la actual:
 
-  `git branch --merged`
 
-* Renombrar ramas:
 
-  `git branch -m nombre_antiguo nombre_nuevo`
 
-* Eliminar ramas:
 
-  ~~~
-  git branch -d nombre_rama
-  git branch -D nombre_rama
-  ~~~
-
-* Integrar ramas a la actual:
-
-  `git merge nombre_rama`
-
-* Resolver conflictos (se suele hacer manualmente):
-
-  `git merge --abort`
-
-### Comandos Ramas III
-
-* Almacenar cambios temporales:
-
-  `git stash save "Mensaje"`
-
-* Listar cambios:
-
-  `git stash list`
-
-* Ver contenido de un cambio temporal:
-
-  `git stash show -p nombre_stash`
-
-* Eliminar un cambio temporal:
-
-  `git stash drop nombre_stash`
 
 * Aplicar cambio del *stash*:
 
